@@ -1,0 +1,7 @@
+dependencies:
+  pre:
+    - echo y | android updte sdk --no-ui --all --filter "24.0"
+
+test:
+  override:
+    - ./gradlew assembleDebug
